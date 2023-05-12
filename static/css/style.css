@@ -1,0 +1,78 @@
+.contenedor {
+    width: 100%;
+    margin: 0 0;
+
+
+}
+
+.header{
+    background-color: #a3c7e4; /* Un tono pastel de azul */
+    background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */
+  }
+
+
+.main{
+    background-color: #ffffff;
+    padding: 0 0;
+}
+
+.primera-seccion{
+    height: 600px;
+    padding: 20px;
+    background-color: #a3c7e4;
+}
+
+.segunda-seccion{
+    height: 350px;
+    padding: 20px;
+
+    background-color: coral;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #1A1A1A; /* Cambia el color de fondo a lo que desees */
+    color: #fff; /* Cambia el color de texto a lo que desees */
+    padding: 20px; /* Agrega espacio de relleno para separar el contenido del borde */
+    text-align: center; /* Centra el contenido en el pie de página */
+    font-size: 14px; /* Define el tamaño de fuente del texto */
+  }
+  
+
+.footer-parrafo{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0;
+}
