@@ -8,6 +8,8 @@
 .header{
     background-color: #a3c7e4; /* Un tono pastel de azul */
     background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */
+
+    
   }
 
 
@@ -16,20 +18,66 @@
     padding: 0 0;
 }
 
+h2, h3{
+    text-align: center;
+}
+
 .primera-seccion{
-    height: 600px;
+    height: auto;
     padding: 20px;
     background-color: #a3c7e4;
 }
 
 .segunda-seccion{
-    height: 350px;
+    height: auto;
+    min-height: 350px;
     padding: 20px;
 
-    background-color: coral;
+    background-color: #a3c7e4; /* Un tono pastel de azul */
+    background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */
 }
 
+.contenedor-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    min-height: 250px;
+    gap: 2%;
+    margin: 0;
+}
 
+.imagen-card{
+    width: 200px;
+    height: 200px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imagen-card:hover{
+    width: 220px;
+    height: 220px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imagen-fixed{
+    height: 200px;
+    width: 200px;
+}
+
+.imagen-fixed:hover{
+    height: 220px;
+    width: 220px;
+}
+
+.tercera-seccion{
+    height: auto;
+    padding: 20px;
+    background-color: #ccc;
+}
 
 
 
