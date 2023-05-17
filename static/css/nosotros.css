@@ -1,0 +1,30 @@
+
+
+h2{
+    text-align: initial;
+}
+
+
+.contenedor-valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 2%;
+}
+
+
+.card{
+    text-align: initial;
+    justify-content: space-between;
+    padding: 4%;
+    height: 220px;
+    min-width: 170px;
+    margin-bottom: 5%;
+}
+
+h4 {
+    justify-content: center;
+    text-align: center;
+}

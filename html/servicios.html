@@ -1,21 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Web page</title>
 
-    <main>
-        <h5>Servicio de revestimiento de paredes</h5>
-        <p>En nuestro servicio de revestimiento de paredes ofrecemos una gran variedad de opciones para darle un toque único y personalizado a tus espacios. Contamos con diferentes materiales y diseños, desde piedra hasta madera, para que puedas elegir el que más se adapte a tus necesidades. Además, nuestro equipo de expertos se encargará de instalarlo de forma rápida y eficiente, garantizando siempre un acabado de calidad.</p>
-        <h5>Colocación de placas de yeso</h5>
-        <p>Si estás buscando una manera rápida y económica de dividir tus espacios sin tener que hacer una obra completa, nuestras placas de yeso son la solución perfecta. En nuestro servicio de colocación de placas de yeso contamos con diferentes espesores y acabados, para que puedas elegir el que mejor se adapte a tus necesidades. Además, nuestro equipo de profesionales se encargará de hacer todo el trabajo por ti, desde la medición y corte hasta la instalación final.</p>
-        <h5>Instalaciones eléctricas</h5>
-        <p>En nuestro servicio de instalaciones eléctricas te ofrecemos soluciones seguras y eficientes para garantizar el correcto funcionamiento de tus equipos y aparatos. Nos encargamos de todo el proceso, desde la planificación y diseño hasta la instalación y conexión final, siempre cumpliendo con las normas de seguridad y calidad requeridas. Además, nuestro equipo de técnicos está altamente capacitado para resolver cualquier tipo de problema o falla en tus instalaciones eléctricas.</p>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/servicios.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header>
+            <div class="container-fluid header">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo"
+                                width="30" height="24" class="d-inline-block align-text-top">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                                <a class="nav-link" href="/html/nosotros.html">Sobre Nosotros</a>
+                                <a class="nav-link" href="/html/servicios.html">Servicios</a>
+                                <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="container main">
+
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 p-3">
+                                <div class="servicio">
+                                    <h3>Revestimientos de Interiores</h3>
+                                    <p>Transformamos tus espacios interiores con revestimientos de alta calidad y
+                                        diseños únicos. Desde piedra natural hasta materiales sintéticos, te ofrecemos
+                                        una amplia variedad de opciones para darle un aspecto elegante y moderno a tus
+                                        paredes.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-3">
+                                <div class="servicio">
+                                    <h3>Colocación de Techos de Yeso</h3>
+                                    <p>Contamos con expertos en la instalación de techos de yeso para crear ambientes
+                                        sofisticados y estéticamente agradables. Nuestros techos de yeso proporcionan un
+                                        acabado liso y uniforme, además de permitir la incorporación de iluminación
+                                        empotrada para resaltar tus espacios.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-3">
+                                <div class="servicio">
+                                    <h3>Molduras Modernas para Paredes</h3>
+                                    <p>Añade un toque de estilo y elegancia a tus paredes con nuestras molduras
+                                        modernas. Ya sea que busques molduras simples y sutiles o diseños más
+                                        elaborados, nuestras molduras para paredes complementarán y realzarán la belleza
+                                        de tus espacios interiores.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2>Galería de Imágenes</h2>
+                                </div>
+                            </div>
+                            <div class="row gallery">
+                                <div class="col-lg-4 col-md-5 p-0">
+                                    <img src="/static/img/Revestimiento para la pared acento piedra.webp"
+                                        alt="Imagen 1">
+                                </div>
+                                <div class="col-lg-4 col-md-5 p-0">
+                                    <img src="/static/img/pared-embutida.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="col-lg-4 col-md-5 p-0">
+                                    <img src="/static/img/moldura-paredes.jpg" alt="Imagen 3">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/techo-yeso.jpg" alt="Imagen 4">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/divisorio-de-vidrio.jpg" alt="Imagen 5">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/techo.jpg" alt="Imagen 6">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/pared-embutida.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/moldura-paredes.jpg" alt="Imagen 3">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/techo-yeso.jpg" alt="Imagen 4">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/pared-embutida.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/moldura-paredes.jpg" alt="Imagen 3">
+                                </div>
+                                <div class="col-lg-3 col-md-6 p-0">
+                                    <img src="/static/img/techo-yeso.jpg" alt="Imagen 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+    </div>
     </main>
+
+
+
+    <footer>
+        <div class="container-fluid footer">
+            <p class="footer-parrafo">&copy; Todos los derechos reservados | <a
+                    src="https://github.com/Mateovalenzuela">Mateo Valenzuela</a></p>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="/static/js/test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
