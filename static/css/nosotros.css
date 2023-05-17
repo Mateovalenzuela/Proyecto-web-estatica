@@ -1,5 +1,6 @@
 
 
+
 h2{
     text-align: initial;
 }
@@ -7,22 +8,20 @@ h2{
 
 .contenedor-valores{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
-    gap: 2%;
+    
+    gap: 35px;
 }
 
 
 .card{
     text-align: initial;
-    justify-content: space-between;
-    padding: 4%;
-    height: 220px;
-    min-width: 170px;
-    margin-bottom: 5%;
+    
 }
+
+
 
 h4 {
     justify-content: center;
