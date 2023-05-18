@@ -98,26 +98,28 @@
 
                                         <div class="card-text">
                                             <div class="container-fluid">
-                                                <form action="" method="">
+                                                <form id="form-contacto"action="" method="">
 
                                                     <div class="form-grup py-1">
                                                         <label for="txt-nombre">Nombre </label>
                                                         <input type="text" id="txt-nombre" name="txt-nombre"
                                                             class="form-control">
+                                                        <div class="" id="valid-nombre"></div>
                                                     </div>
 
                                                     <div class="form-grup py-1">
                                                         <label for="txt-apellido">Apellido</label>
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" id="txt-apellido" name="txt-apellido"
+                                                        
+                                                        <input type="text" id="txt-apellido" name="txt-apellido"
                                                                 class="form-control">
-                                                        </div>
+                                                        <div class="" id="valid-apellido" ></div>
                                                     </div>
 
                                                     <div class="form-grup py-1">
                                                         <label for="txt-email">Email</label>
                                                         <input type="text" id="txt-email" name="txt-email"
                                                             class="form-control">
+                                                        <div class="" id="valid-email" ></div>
                                                     </div>
 
 
@@ -126,10 +128,11 @@
                                                         <label for="txt-mensaje">Mensaje</label>
                                                         <textarea type="text" id="txt-mensaje" name="txt-mensaje"
                                                             class="form-control"></textarea>
+                                                        <div class="" id="valid-mensaje" ></div>
                                                     </div>
 
                                                     <div class="form-grup py-1">
-                                                        <button type="submit"
+                                                        <button type="submit" onclick="validar(Event)"
                                                             class="btn btn-primary btn-block text-white">Guardar
                                                         </button>
                                                     </div>

@@ -7,6 +7,14 @@
     
 }
 
+.invalido{
+    color: rgb(245, 134, 134);
+}
+
+.valido{
+    color: rgb(160, 226, 160);
+}
+
 
 @media (max-width: 992px) {
     .formulario {
