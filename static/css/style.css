@@ -80,6 +80,13 @@ h2, h3{
     background-color: #ccc;
 }
 
+.invalido{
+    color: rgb(245, 134, 134);
+}
+
+.valido{
+    color: rgb(160, 226, 160);
+}
 
 
 

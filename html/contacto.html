@@ -40,6 +40,10 @@
                                 <a class="nav-link" href="/html/nosotros.html">Sobre Nosotros</a>
                                 <a class="nav-link" href="/html/servicios.html">Servicios</a>
                                 <a class="nav-link active" href="/html/contacto.html">Contacto</a>
+                                <div class="">
+                                    <a class="nav-link" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#presupuestoModal">Solicitar Presupuesto</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,9 +150,85 @@
                         </div>
 
                     </div>
+                </section>
 
+
+                <div class="modal fade" id="presupuestoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true" aria-expanded="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+        
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addModalLabel">Solicitar Presupuesto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+        
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form id="form-presupuesto" action="" method="">
+        
+                                    <div class="form-grup py-1">
+                                        <label for="txt-metros-p">M² a Cubrir</label>
+                                        <input type="text" id="txt-metros-p" name="txt-metros-p" class="form-control">
+                                        <div class="" id="valid-metros-p"></div>
+                                    </div>
+        
+                                    <div>
+                                        <br>
+                                        <label for="">Trabajo a realizar</label>
+                                        <div class="form-check py-1">
+                                            <input class="form-check-input" type="radio" name="opciones" id="txt-pared-p">
+                                            <label class="form-check-label" for="txt-pared-p">
+                                                Revestimiento de paredes
+                                            </label>
+                                        </div>
+        
+                                        <div class="form-check py-1">
+                                            <input class="form-check-input" type="radio" name="opciones" id="txt-techado-p">
+                                            <label class="form-check-label" for="txt-techado-p">
+                                                Techado de yeso
+                                            </label>
+                                        </div>
+                                        <div class="form-check py-1">
+                                            <input class="form-check-input" type="radio" name="opciones" id="txt-otro-p">
+                                            <label class="form-check-label" for="txt-otro-p">
+                                                Otro
+                                            </label>
+                                        </div>
+                                        <div class="" id="valid-trabajo-p"></div>
+                                    </div>
+        
+        
+                                    <br>
+                                    <h5>¿A donde te enviamos la cotización?</h5>
+                                    <hr>
+        
+                                    <div class="form-grup py-1">
+                                        <label for="txt-nombre-p">Nombre Completo</label>
+                                        <input type="text" id="txt-nombre-p" name="txt-nombre-p" class="form-control">
+                                        <div class="" id="valid-nombre-p"></div>
+                                    </div>
+        
+        
+                                    <div class="form-grup py-1">
+                                        <label for="txt-email-p">Email</label>
+                                        <input type="text" id="txt-email-p" name="txt-email-p" class="form-control">
+                                        <div class="" id="valid-email-p"></div>
+                                    </div>
+        
+                                    <div class="form-grup py-1">
+                                        <button type="submit" onclick="validar_presupuesto(Event)"
+                                            class="btn btn-primary btn-block text-white">Guardar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </section>
+            </div>
+            
     </div>
     </main>
 
@@ -163,6 +243,7 @@
 
     </div>
 
+    <script src="/static/js/presupuesto.js"></script>
     <script src="/static/js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
