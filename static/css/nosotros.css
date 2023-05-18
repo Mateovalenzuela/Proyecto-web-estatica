@@ -1,5 +1,8 @@
 
-
+.container{
+    min-height: 85vh;
+    padding-bottom: 80px;
+}
 
 h2{
     text-align: initial;
@@ -11,6 +14,8 @@ h2{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
+    
     
     gap: 35px;
 }
