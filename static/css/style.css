@@ -3,16 +3,103 @@
 .contenedor {
     width: 100%;
     margin: 0 0;
-    background-color: #eee;
+    
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header{
+    width: 100%;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-bar{
+    background-color: #1A1A1A;
+    min-height: 10%;
+    height: 10%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1% 5%;
+    align-items: center;
+}
+
+.top-bar-izq{
+    text-align: center;
+    gap: 4%;
+
+    
+    font-size: 14px;
+}
+
+.top-bar-izq a{
+    font-size: 14px;
+    text-decoration: none; /* Quita el subrayado */
+    color: white; /* Cambia el color a rojo (#ff0000) */
+}
+
+.top-bar-izq, i{
+    margin: 6px;
+    color: #a3c7e4;
+}
+
+.top-bar-der i{
+    margin: 6px;
+    color: white;
+
+}
+
+.top-bar-der i:hover{
+    color: #0077be;
+}
+
+
+
+.logo-nav-bar {
+    width: 56px;
+    height: 38px;
+}
+
+.nav-bar{
     background-color: #a3c7e4; /* Un tono pastel de azul */
     background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */  
-  }
 
+    padding: 2% 2%;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+
+.btn-nav-bar {
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgb(184, 218, 238);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: #1A1A1A;
+    padding: 10px 25px;
+    border: 1px solid #0077be;
+    border-radius: 6px;
+    text-transform: uppercase;
+  }
+  
+  .btn-nav-bar:hover {
+    background-color: #0077be;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  
+  
  
 
 .main{
@@ -26,8 +113,35 @@ h2, h3{
 .primera-seccion{
     height: auto;
     padding: 20px;
-    background-color: #a3c7e4;
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    background-image: url("../img/Revestimiento para la pared acento marmol.webp");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Para recortar la sombra si se desborda del contenedor */
+    box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Agrega el efecto de sombra */
+
 }
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .text-overlay h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .text-overlay p {
+    font-size: 18px;
+  }
 
 .segunda-seccion{
     height: auto;
@@ -75,9 +189,33 @@ h2, h3{
 }
 
 .tercera-seccion{
-    height: auto;
+    min-height: 100vh;
     padding: 20px;
     background-color: #ccc;
+
+    
+    position: relative;
+    overflow: hidden; /* Para recortar la sombra si se desborda del contenedor */
+    box-shadow: inset 0 0 30px 10px rgba(0, 0, 0, 0.5); /* Agrega el efecto de sombra */
+}
+
+.titulo-nuestra-empresa h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+.img-nuestra-empresa{
+    width: 70%;
+    padding: 2%;
+}
+
+.descripcion-nuesta-empresa{
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 
 .invalido{

@@ -18,44 +18,72 @@
     <div class="contenedor">
 
         <header>
-            <div class="container-fluid header">
-                <nav class="navbar navbar-expand-lg ">
-                    <div class="container-fluid">
+            <div class="header">
+
+                <div class="top-bar">
+                    <div class="top-bar-izq">
+                        <a href=""><i class="bi bi-envelope-at-fill"></i>revestimientosJW@gmail.com</a>
+                        <a href=""><i class="bi bi-geo-alt-fill"></i>Humboldt, Santa Fé, Argentina</a>
+                    </div>
+
+                    <div class="top-bar-der">
+                        <a href="" class=""><i class="bi bi-instagram"></i></a>
+                        <a href="" class=""><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="nav-bar">
+
+                    <div>
                         <a class="navbar-brand" href="#">
-                            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo"
-                                width="30" height="24" class="d-inline-block align-text-top">
+                            <img src="./static/logo.png" alt="Logo"
+                            class="logo-nav-bar">
                         </a>
+                    </div>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav nav-underline">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                                <a class="nav-link" href="/html/nosotros.html">Sobre Nosotros</a>
-                                <a class="nav-link" href="/html/servicios.html">Servicios</a>
-                                <a class="nav-link" href="/html/contacto.html">Contacto</a>
-                                <div class="">
-                                    <a class="nav-link" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#presupuestoModal">Solicitar Presupuesto</a>
+                    <div>
+                        <nav class="navbar navbar-expand-lg  align-items-center">
+                            <div class="container-fluid">
+    
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+        
+                                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav nav-underline">
+                                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                                        <a class="nav-link" href="/html/nosotros.html">Sobre Nosotros</a>
+                                        <a class="nav-link" href="/html/servicios.html">Servicios</a>
+                                        <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                                        <div class="">
+                                            <a class="nav-link" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#presupuestoModal">Solicitar Presupuesto</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
-                </nav>
+
+                    <div>
+                        <a href="" class="btn-nav-bar">Llamanos</a>
+                    </div>
+                    
+                </div>
+                
+                
             </div>
         </header>
 
         <main>
-            <div class="container main">
+            <div class="contenedor main">
 
 
 
-                <div class="container primera-seccion">
-                    <div class="container my-4">
+                <div class="contenedor primera-seccion">
+                    <div class="container my-4 text-overlay">
                         <div class="row">
                             <div class="col-lg-6 mb-2 ">
                                 <h1>Revestimiento de Interiores</h1>
@@ -63,27 +91,27 @@
                                     nuestros servicios de revestimiento de interiores de todo tipo.</p>
                                 <a href="/html/nosotros.html" class="btn btn-primary">Saber más</a>
                             </div>
-                            <div class="col-lg-6">
-                                <img src="/static/img/Revestimiento para la pared acento marmol.webp" class="w-100"
-                                    alt="Revestimiento de interiores">
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
 
 
-                <div class="container tercera-seccion">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8">
+                <div class="contenedor tercera-seccion">
+                    <div class="contenedor">
+                        <div class="row ">
+                            <div class="titulo-nuestra-empresa">
                                 <h2>Nuestra Empresa</h2>
+                                
+                            </div>
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <img src="/static/img/banner-2.jpg" alt="Imagen de la empresa" class=" img-nuestra-empresa">
+                            </div>
+                            <div class="container col-md-10 descripcion-nuesta-empresar">
                                 <p>Somos una empresa líder en la instalación de revestimientos de interiores, colocación
                                     de placas de yeso y servicios eléctricos en la ciudad. Contamos con más de 14 años
                                     de experiencia en el mercado y un equipo de profesionales altamente capacitados para
                                     brindar soluciones de calidad a nuestros clientes.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/static/img/banner-2.jpg" alt="Imagen de la empresa" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -206,6 +234,8 @@
     </div>
 
     <script src="/static/js/presupuesto.js"></script>
+    <script src="/static/js/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
