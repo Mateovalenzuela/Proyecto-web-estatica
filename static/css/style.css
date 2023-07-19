@@ -144,7 +144,7 @@ h2, h3{
   }
 
 .segunda-seccion{
-    height: auto;
+    min-height: 100vh;
     min-height: 350px;
     padding: 20px;
 
@@ -152,40 +152,46 @@ h2, h3{
     background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */
 }
 
-.contenedor-imagenes{
+.contenedor-imagenes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Las imágenes se envuelven en filas */
+    justify-content: center; /* Ajustar espaciado entre las imágenes */
     align-items: center;
-    
     min-height: 250px;
-    gap: 2%;
     margin: 0;
-}
+  }
+  
+  .imagen-card {
+    flex-basis: 100%; 
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+  }
 
-.imagen-card{
-    width: 200px;
-    height: 200px;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.imagen-card:hover{
-    width: 220px;
-    height: 220px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .imagen-fixed{
-    height: 200px;
-    width: 200px;
+    height: 35%;
+    width: 40%;
+
+    
+    padding: 2%;
+    transition: 500ms;
 }
 
+
 .imagen-fixed:hover{
-    height: 220px;
-    width: 220px;
+    cursor: pointer;
+    padding: 0%;
+    transition: 300ms;
+}
+.imagen-fixed.left {
+    transition: 500ms;
+    transform: translateX(-70%); /* Movemos el elemento hacia la izquierda */
+    padding: 0;
+    pointer-events: none;
 }
 
 .tercera-seccion{
