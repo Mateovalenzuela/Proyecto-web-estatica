@@ -1,20 +1,18 @@
-
-
 .contenedor {
     width: 100%;
     margin: 0 0;
-    
 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header{
+.header {
     width: 100%;
     height: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.top-bar{
+.top-bar {
     background-color: #1A1A1A;
     min-height: 10%;
     height: 10%;
@@ -26,32 +24,35 @@
     align-items: center;
 }
 
-.top-bar-izq{
+.top-bar-izq {
     text-align: center;
     gap: 4%;
 
-    
+
     font-size: 14px;
 }
 
-.top-bar-izq a{
+.top-bar-izq a {
     font-size: 14px;
-    text-decoration: none; /* Quita el subrayado */
-    color: white; /* Cambia el color a rojo (#ff0000) */
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: white;
+    /* Cambia el color a rojo (#ff0000) */
 }
 
-.top-bar-izq, i{
+.top-bar-izq,
+i {
     margin: 6px;
     color: #a3c7e4;
 }
 
-.top-bar-der i{
+.top-bar-der i {
     margin: 6px;
     color: white;
 
 }
 
-.top-bar-der i:hover{
+.top-bar-der i:hover {
     color: #0077be;
 }
 
@@ -62,9 +63,11 @@
     height: 38px;
 }
 
-.nav-bar{
-    background-color: #a3c7e4; /* Un tono pastel de azul */
-    background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */  
+.nav-bar {
+    background-color: #a3c7e4;
+    /* Un tono pastel de azul */
+    background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%);
+    /* Un gradiente que mezcla el tono pastel con el azul oscuro */
 
     padding: 2% 2%;
 
@@ -90,27 +93,34 @@
     border: 1px solid #0077be;
     border-radius: 6px;
     text-transform: uppercase;
-  }
-  
-  .btn-nav-bar:hover {
+}
+
+.btn-nav-bar:hover {
     background-color: #0077be;
     color: white;
     border: 1px solid white;
     border-radius: 4px;
-  }
-  
-  
- 
+}
 
-.main{
+@media (min-width: 576px) and (max-width: 800px) {
+    .btn-nav-bar{
+        display: none;
+    }
+    
+
+  }
+
+
+.main {
     padding: 0 0;
 }
 
-h2, h3{
+h2,
+h3 {
     text-align: center;
 }
 
-.primera-seccion{
+.primera-seccion {
     height: auto;
     padding: 20px;
     position: relative;
@@ -118,8 +128,10 @@ h2, h3{
     background-image: url("../img/Revestimiento para la pared acento marmol.webp");
     background-size: cover;
     background-position: center;
-    overflow: hidden; /* Para recortar la sombra si se desborda del contenedor */
-    box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Agrega el efecto de sombra */
+    overflow: hidden;
+    /* Para recortar la sombra si se desborda del contenedor */
+    box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    /* Agrega el efecto de sombra */
 
 }
 
@@ -132,103 +144,188 @@ h2, h3{
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
-  
-  .text-overlay h1 {
+}
+
+.text-overlay h1 {
     font-size: 32px;
     margin-bottom: 20px;
-  }
-  
-  .text-overlay p {
-    font-size: 18px;
-  }
+}
 
-.segunda-seccion{
-    min-height: 100vh;
+.text-overlay p {
+    font-size: 18px;
+}
+
+.segunda-seccion {
     min-height: 350px;
     padding: 20px;
 
-    background-color: #a3c7e4; /* Un tono pastel de azul */
-    background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%); /* Un gradiente que mezcla el tono pastel con el azul oscuro */
+    background-color: #a3c7e4;
+    /* Un tono pastel de azul */
+    background-image: linear-gradient(135deg, #a3c7e4 0%, #0077be 100%);
+    /* Un gradiente que mezcla el tono pastel con el azul oscuro */
+}
+
+.segunda-seccion h3{
+    font-size: 2.3rem;
+    font-style: oblique;
+    padding: 2%;
+
+    text-align: center;
 }
 
 .contenedor-imagenes {
+    height: 80%;
     display: flex;
-    flex-wrap: wrap; /* Las imágenes se envuelven en filas */
-    justify-content: center; /* Ajustar espaciado entre las imágenes */
+    flex-wrap: wrap;
+    /* Las imágenes se envuelven en filas */
+    justify-content: center;
+    
+    /* Ajustar espaciado entre las imágenes */
     align-items: center;
     min-height: 250px;
     margin: 0;
-  }
-  
-  .imagen-card {
-    flex-basis: 100%; 
+}
+
+.imagen-card {
+    flex-basis: 100%;
     height: auto;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
     justify-content: center;
-  }
+    position: relative;
+    /* Para que el contenedor-descripcion se posicione correctamente */
+
+    align-items: center;
+}
 
 
 
-.imagen-fixed{
+.imagen-fixed {
     height: 35%;
     width: 40%;
 
-    
+
     padding: 2%;
     transition: 500ms;
 }
 
 
-.imagen-fixed:hover{
+.imagen-fixed:hover {
     cursor: pointer;
     padding: 0%;
     transition: 300ms;
 }
+
 .imagen-fixed.left {
     transition: 500ms;
-    transform: translateX(-70%); /* Movemos el elemento hacia la izquierda */
     padding: 0;
     pointer-events: none;
 }
 
-.tercera-seccion{
+.contenedor-descripcion {
+    width: 50%;
+    height: 50%;
+    padding: 2%;
+    overflow: hidden;
+    /* Ocultar cualquier contenido desbordado */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.contenedor-descripcion div {
+    width: 100%;
+    height: max-content;
+    padding: 1%;
+}
+
+.img-title {
+    position: sticky;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: left;
+    background-image: linear-gradient(75deg, #afcecf, #404b58e8, #050408);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animarTitulo 8s linear infinite;
+}
+
+@keyframes animarTitulo {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.img-description {
+    text-align: start;
+    text-justify: auto;
+
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tercera-seccion {
     min-height: 100vh;
     padding: 20px;
     background-color: #ccc;
 
-    
+
     position: relative;
-    overflow: hidden; /* Para recortar la sombra si se desborda del contenedor */
-    box-shadow: inset 0 0 30px 10px rgba(0, 0, 0, 0.5); /* Agrega el efecto de sombra */
+    overflow: hidden;
+    /* Para recortar la sombra si se desborda del contenedor */
+    box-shadow: inset 0 0 30px 10px rgba(0, 0, 0, 0.5);
+    /* Agrega el efecto de sombra */
 }
 
-.titulo-nuestra-empresa h2{
+.titulo-nuestra-empresa h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5rem;
-    
+
     text-align: center;
     justify-content: center;
 }
 
-.img-nuestra-empresa{
+.img-nuestra-empresa {
     width: 70%;
     padding: 2%;
 }
 
-.descripcion-nuesta-empresa{
+.descripcion-nuesta-empresa {
     text-align: center;
     justify-content: center;
     font-size: 2rem;
 }
 
-.invalido{
+.invalido {
     color: rgb(245, 134, 134);
 }
 
-.valido{
+.valido {
     color: rgb(160, 226, 160);
 }
 
@@ -265,15 +362,20 @@ h2, h3{
 
 
 .footer {
-    background-color: #1A1A1A; /* Cambia el color de fondo a lo que desees */
-    color: #fff; /* Cambia el color de texto a lo que desees */
-    padding: 20px; /* Agrega espacio de relleno para separar el contenido del borde */
-    text-align: center; /* Centra el contenido en el pie de página */
-    font-size: 14px; /* Define el tamaño de fuente del texto */
-  }
-  
+    background-color: #1A1A1A;
+    /* Cambia el color de fondo a lo que desees */
+    color: #fff;
+    /* Cambia el color de texto a lo que desees */
+    padding: 20px;
+    /* Agrega espacio de relleno para separar el contenido del borde */
+    text-align: center;
+    /* Centra el contenido en el pie de página */
+    font-size: 14px;
+    /* Define el tamaño de fuente del texto */
+}
 
-.footer-parrafo{
+
+.footer-parrafo {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 0;
