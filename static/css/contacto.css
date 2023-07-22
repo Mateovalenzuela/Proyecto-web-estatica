@@ -1,11 +1,48 @@
+
 .container{
-    min-height: 90vh;
+    min-height: 100%;
+    text-align: center;
 }
 
 .formulario {
-    width: 75%;
-    
+    width: 100%;
+    text-align: start;
 }
+
+.btn-form {
+    padding: 2% 4%;
+    border: 2px #1f1919 solid;
+    border-radius: 10px;
+    color: white;
+    background-color: #62abd4;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  .btn-form.round {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+  }
+  
+  .btn-form.check {
+    background-color: #28a745;
+  }
+  
+  .btn-form.check::before {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
 
 
 
