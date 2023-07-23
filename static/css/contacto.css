@@ -1,60 +1,167 @@
 
-.container{
-    min-height: 100%;
-    text-align: center;
+main{
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+  background-color: #ccc;
 }
+
+.container {
+  min-height: 100%;
+}
+
+/* Estilos para las redes sociales */
+.social-links-container {
+  text-align: center;
+}
+
+.nav-link-redes {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #62abd4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+i {
+  color: white;
+}
+
+.nav-link-redes:hover {
+  transform: scale(1.1);
+}
+
+/* Animaciones personalizadas */
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes bounce-animation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-animation {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Asignar animaciones a las redes sociales */
+.rotate-animation {
+  animation: rotate-animation 6s infinite;
+}
+
+.fade-in-animation {
+  animation: fade-in-animation 3s infinite;
+}
+
+.slide-left-animation {
+  animation: slide-left-animation 4s infinite;
+}
+
+.bounce-animation {
+  animation: bounce-animation 4s infinite;
+}
+
+.pulse-animation {
+  animation: pulse-animation 3s infinite;
+}
+
 
 
 
 .formulario {
-    width: 100%;
-    text-align: start;
+  width: 100%;
+  text-align: start;
 }
 
 .btn-form {
-    padding: 2% 4%;
-    border: 2px #1f1919 solid;
-    border-radius: 10px;
-    color: white;
-    background-color: #62abd4;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
-  }
-  
-  .btn-form.round {
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    border-radius: 50%;
-  }
-  
-  .btn-form.check {
-    background-color: #28a745;
-  }
-  
-  .btn-form.check::before {
-    font-size: 24px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
+  padding: 2% 4%;
+  border: 2px #1f1919 solid;
+  border-radius: 10px;
+  color: white;
+  background-color: #62abd4;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.btn-form.round {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-form.check {
+  background-color: #28a745;
+}
+
+.btn-form.check::before {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 
 
 
 
 @media (max-width: 992px) {
-    .formulario {
-      width: 100%;
-    }
-
-    .col {
-        justify-self: start;
-    }
+  .formulario {
+    width: 100%;
   }
+
+  .col {
+    justify-self: start;
+  }
+}

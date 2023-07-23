@@ -148,3 +148,29 @@ function validar_radio(opciones){
     }
     return false;
 }
+
+
+// Función para agregar animaciones a las redes sociales
+function agregarAnimaciones() {
+    // Obtener todos los enlaces de redes sociales
+    const redesSociales = document.querySelectorAll(".nav-link-redes");
+
+    // Animaciones personalizadas
+    const animaciones = [
+      "rotate-animation",
+      "fade-in-animation",
+      "slide-left-animation",
+      "bounce-animation",
+      "pulse-animation"
+    ];
+
+    // Agregar animaciones a las redes sociales
+    redesSociales.forEach((red, index) => {
+      red.classList.add(animaciones[index]);
+    });
+  }
+
+  // Llamar a la función para agregar las animaciones al cargar la página
+  window.onload = agregarAnimaciones;
+
+  
