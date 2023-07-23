@@ -10,7 +10,7 @@
         "descripcion": ""
     },
     {
-        "src": "/static/img/moldura-paredes.jpg",
+        "src": "../static/img/moldura-paredes.jpg",
         "alt": "Moldura paredes",
         "descripcion": ""
     },
