@@ -1,5 +1,5 @@
 function cargarContenido() {
-  fetch('../static/proyectos_terminados.json')
+  fetch('../static/data/proyectos_terminados.json')
     .then(response => response.json())
     .then(contenidoJSON => {
       var contenidoHTML = '';
