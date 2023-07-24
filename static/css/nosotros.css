@@ -1,9 +1,11 @@
 main{
+    background-color: #f9f9f9;
     box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
-    background-color: #ccc;
   }
 
-
+main p{
+    text-align: justify;
+}
 .container{
     min-height: 100%;
     padding-bottom: 80px;
@@ -14,21 +16,32 @@ h2{
 }
 
 
+
 .contenedor-valores{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
-    
-    
     gap: 35px;
 }
 
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 6%;
+}
+
+
+
 
 .card{
-    text-align: initial;
-    
+    height: 50vh;
+}
+
+.card:hover{
+    padding: 0%;
 }
 
 
