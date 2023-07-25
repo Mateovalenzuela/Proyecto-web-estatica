@@ -102,20 +102,14 @@ i {
     border-radius: 4px;
 }
 
-@media (min-width: 576px) and (max-width: 800px) {
-    .btn-nav-bar{
-        display: none;
-    }
-    
 
-  }
 
 
 .main {
     padding: 0 0;
 }
 
-main p{
+main p {
     text-align: justify;
 }
 
@@ -124,11 +118,12 @@ h3 {
     text-align: center;
 }
 
+/* ------------------------------------------------------------------------------------------- home -------------------------------------------------------------------------------------------*/
+
 .primera-seccion {
     height: auto;
-    padding: 20px;
     position: relative;
-    height: calc(100vh );
+    height: calc(100vh);
     background-image: url("../img/Revestimiento para la pared acento marmol.webp");
     background-size: cover;
     background-position: center;
@@ -139,8 +134,19 @@ h3 {
 
 }
 
-.text-overlay {
+ .primera-seccion::before {
+    content: "";
     position: absolute;
+    width: 100%;
+    height: calc(100vh);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /* Establece un valor positivo para mostrarlo por encima de la imagen de fondo */
+}
+
+.text-overlay {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -169,7 +175,7 @@ h3 {
     /* Un gradiente que mezcla el tono pastel con el azul oscuro */
 }
 
-.segunda-seccion h3{
+.segunda-seccion h3 {
     font-size: 2.3rem;
     font-style: oblique;
     padding: 2%;
@@ -183,7 +189,7 @@ h3 {
     flex-wrap: wrap;
     /* Las imágenes se envuelven en filas */
     justify-content: center;
-    
+
     /* Ajustar espaciado entre las imágenes */
     align-items: center;
     min-height: 250px;
@@ -283,16 +289,6 @@ h3 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .tercera-seccion {
     min-height: 100vh;
     padding: 20px;
@@ -332,38 +328,6 @@ h3 {
     color: rgb(160, 226, 160);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     background-color: #1A1A1A;
     /* Cambia el color de fondo a lo que desees */
@@ -382,4 +346,554 @@ h3 {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 0;
+}
+
+
+
+/* ------------------------------------------------------------------------ sobre nosotros --------------------------------------- */
+
+
+.contenedor-nosotros {
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    min-height: 100%;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+
+.contenedor-nosotros .nosotros-primera-seccion {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    height: calc(100vh);
+    background-image: url("../img/nosotros.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+}
+
+.contenedor-nosotros .row {
+    margin: 0;
+}
+
+.contenedor-nosotros .nosotros-primera-seccion::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /* Establece un valor positivo para mostrarlo por encima de la imagen de fondo */
+}
+
+.contenedor-nosotros .nosotros-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding-top: 4%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.contenedor-nosotros .contenedor-valores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+
+.contenedor-nosotros .valores {
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.contenedor-nosotros .card-body {
+    height: 100%;
+}
+
+@keyframes recorrido-circulo {
+    0% {
+        border-color: #f0f0f0;
+    }
+
+    25% {
+        border-color: #d0d0d0;
+    }
+
+    50% {
+        border-color: #a0a0a0;
+    }
+
+    75% {
+        border-color: #808080;
+    }
+
+    100% {
+        border-color: #f0f0f0;
+    }
+}
+
+.contenedor-nosotros .valores:hover {
+    animation: recorrido-circulo 2s infinite;
+    transform: scale(1.1);
+}
+
+
+.contenedor-nosotros .card-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 6%;
+}
+
+
+.contenedor-nosotros .card {
+    height: 50vh;
+}
+
+.contenedor-nosotros .card:hover {
+    padding: 0%;
+}
+
+/* ------------------------------------------------------------------------- servicios ----------------------------------------------------------------------------------------------------- */
+
+
+
+.contenedor-servicios {
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+
+    box-sizing: border-box;
+}
+
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicio h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.servicio p {
+    font-family: monospace;
+}
+
+
+/* Animación Fade In para Revestimientos de Interiores */
+.servicio:nth-child(1) {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación Slide In From Left para Colocación de Techos de Yeso */
+.servicio:nth-child(2) {
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Animación Bounce In para Molduras Modernas para Paredes */
+.servicio:nth-child(3) {
+    opacity: 0;
+    animation: bounceIn 1s forwards;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.gallery {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+
+.column {
+    flex: 25%;
+    padding: 2.5px;
+}
+
+.column img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+
+.contenedor-servicios .row {
+    padding-bottom: 20px;
+}
+
+
+
+/* --------------------------------------------------------------------------------- contacto --------------------------------------------------------------------------------*/
+
+.contenedor-contacto {
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    min-height: 100%;
+}
+
+
+/* Estilos para las redes sociales */
+.contenedor-contacto .social-links-container {
+    text-align: center;
+}
+
+.contenedor-contacto .nav-link-redes {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #62abd4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-contacto i {
+    color: white;
+}
+
+.contenedor-contacto .nav-link-redes:hover {
+    transform: scale(1.1);
+}
+
+
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes bounce-animation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Asignar animaciones a las redes sociales */
+.contenedor-contacto .rotate-animation {
+    animation: rotate-animation 6s infinite;
+}
+
+.contenedor-contacto .fade-in-animation {
+    animation: fade-in-animation 3s infinite;
+}
+
+.contenedor-contacto .slide-left-animation {
+    animation: slide-left-animation 4s infinite;
+}
+
+.contenedor-contacto .bounce-animation {
+    animation: bounce-animation 4s infinite;
+}
+
+.contenedor-contacto .pulse-animation {
+    animation: pulse-animation 3s infinite;
+}
+
+
+
+
+.contenedor-contacto .formulario {
+    width: 100%;
+    text-align: start;
+}
+
+.contenedor-contacto .btn-form {
+    padding: 2% 4%;
+    border: 2px #1f1919 solid;
+    border-radius: 10px;
+    color: white;
+    background-color: #62abd4;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.contenedor-contacto .btn-form.round {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.contenedor-contacto .btn-form.check {
+    background-color: #28a745;
+}
+
+.contenedor-contacto .btn-form.check::before {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* ------------------------------------------------------------------------------------------ testimonios -------------------------------------------------------------------------------*/
+
+.contenedor-testimonios {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    min-height: 100%;
+}
+
+.contenedor-testimonios .section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contenedor-testimonios .testimonial-card {
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.contenedor-testimonios .testimonial-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    text-align: justify;
+    /* Justifica el texto de los párrafos */
+}
+
+
+.contenedor-testimonios .testimonial-content img {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    border-radius: 25%;
+    margin-bottom: 15px;
+}
+
+
+.contenedor-testimonios .testimonial-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.contenedor-testimonios .testimonial-author {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------------------------- media querys ---------------------------------------------------------------------------------- */
+
+/* Extra Small (xs) */
+@media (max-width: 575.98px) {
+
+    /* Estilos para pantallas extra pequeñas */
+    .btn-nav-bar {
+        display: none;
+    }
+
+    .logo-nav-bar {
+        display: none;
+    }
+
+    .top-bar a {
+        display: block;
+    }
+
+    .img-nuestra-empresa {
+        width: 100%;
+    }
+
+    .imagen-card {
+        flex-wrap: wrap;
+    }
+
+    .imagen-fixed {
+        width: 75%;
+    }
+
+    .contenedor-descripcion {
+        width: 80%;
+    }
+
+    .column {
+        flex: 100%;
+        padding: 0% 5px;
+    }
+}
+
+/* Small (sm) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Estilos para pantallas pequeñas */
+
+
+
+
+
+}
+
+/* Medium (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Estilos para pantallas medianas */
+    .btn-nav-bar {
+        display: none;
+    }
+
+    .contenedor-nosotros {
+        font-size: 1.2rem;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 5px;
+    }
+
+}
+
+/* Large (lg) */
+@media (min-width: 992px) {
+
+    /* Estilos para pantallas grandes */
+    .img-nuestra-empresa {
+        width: 80%;
+    }
+
+    .descripcion-nuesta-empresa p {
+        font-size: 18px;
+    }
+
+    .contenedor-valores .col-10 {
+        height: 100%;
+    }
+
+
+
+    .contenedor-nosotros {
+        font-size: 1.2rem;
+    }
+
+
+
+
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* Estilos para pantallas extra grandes */
+
+
+}
+
+/* Extra Extra Large (xxl) */
+@media (min-width: 1400px) {
+    /* Estilos para pantallas muy grandes */
 }
