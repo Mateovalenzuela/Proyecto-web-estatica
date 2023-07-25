@@ -10,6 +10,64 @@ main{
 main p{
   text-align: justify;
 }
+ 
+.servicios{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicio h3{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.servicio p{
+  font-family: monospace;
+}
+
+
+/* Animación Fade In para Revestimientos de Interiores */
+.servicio:nth-child(1) {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación Slide In From Left para Colocación de Techos de Yeso */
+.servicio:nth-child(2) {
+  transform: translateX(-100%);
+  animation: slideInLeft 1s forwards;
+}
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animación Bounce In para Molduras Modernas para Paredes */
+.servicio:nth-child(3) {
+  opacity: 0;
+  animation: bounceIn 1s forwards;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
 
 img {
   width: 100%;
